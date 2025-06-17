@@ -1,13 +1,13 @@
 const HEAD = (
   <div
     style={{
-      width: "50px",
-      height: "50px",
+      width: "25px",
+      height: "25px",
       borderRadius: "100%",
       border: "10px solid black",
       position: "absolute",
-      top: "50px",
-      right: "-30px",
+      top: "15px",
+      right: "-20px",
     }}
   />
 )
@@ -16,10 +16,10 @@ const BODY = (
   <div
     style={{
       width: "10px",
-      height: "100px",
+      height: "60px",
       background: "black",
       position: "absolute",
-      top: "120px",
+      top: "55px",
       right: 0,
     }}
   />
@@ -28,12 +28,12 @@ const BODY = (
 const RIGHT_ARM = (
   <div
     style={{
-      width: "100px",
+      width: "50px",
       height: "10px",
       background: "black",
       position: "absolute",
-      top: "150px",
-      right: "-100px",
+      top: "70px",
+      right: "-50px",
       rotate: "-30deg",
       transformOrigin: "left bottom",
     }}
@@ -43,11 +43,11 @@ const RIGHT_ARM = (
 const LEFT_ARM = (
   <div
     style={{
-      width: "100px",
+      width: "50px",
       height: "10px",
       background: "black",
       position: "absolute",
-      top: "150px",
+      top: "70px",
       right: "10px",
       rotate: "30deg",
       transformOrigin: "right bottom",
@@ -58,12 +58,12 @@ const LEFT_ARM = (
 const RIGHT_LEG = (
   <div
     style={{
-      width: "100px",
+      width: "50px",
       height: "10px",
       background: "black",
       position: "absolute",
-      top: "210px",
-      right: "-90px",
+      top: "100px",
+      right: "-40px",
       rotate: "60deg",
       transformOrigin: "left bottom",
     }}
@@ -73,11 +73,11 @@ const RIGHT_LEG = (
 const LEFT_LEG = (
   <div
     style={{
-      width: "100px",
+      width: "50px",
       height: "10px",
       background: "black",
       position: "absolute",
-      top: "210px",
+      top: "100px",
       right: 0,
       rotate: "-60deg",
       transformOrigin: "right bottom",
@@ -97,7 +97,7 @@ export function HangmanDrawing({ numberOfGuesses }: HangmanDrawingProps) {
       {BODY_PARTS.slice(0, numberOfGuesses)}
       <div
         style={{
-          height: "50px",
+          height: "20px",
           width: "10px",
           background: "black",
           position: "absolute",
@@ -108,20 +108,20 @@ export function HangmanDrawing({ numberOfGuesses }: HangmanDrawingProps) {
       <div
         style={{
           height: "10px",
-          width: "200px",
+          width: "120px",
           background: "black",
           marginLeft: "120px",
         }}
       />
       <div
         style={{
-          height: "400px",
+          height: "200px",
           width: "10px",
           background: "black",
           marginLeft: "120px",
         }}
       />
-      <div style={{ height: "10px", width: "250px", background: "black" }} />
+      <div style={{ height: "10px", width: "200px", background: "black" }} />
     </div>
   )
 }
